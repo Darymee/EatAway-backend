@@ -2,7 +2,7 @@ const { log } = require("console");
 const { Posts } = require("../models/posts.js");
 
 async function getPosts(req, res, next) {
-  const posts = await Posts.find().sort({ createdAt: 1 });
+  const posts = await Posts.find().sort({ createdAt: -1 });
 
   return res.status(200).json(posts);
 }
