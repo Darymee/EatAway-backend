@@ -13,6 +13,10 @@ const schema = mongoose.Schema({
     type: String,
     required: [true, "Email is required"],
   },
+  title: {
+    type: String,
+    required: [true],
+  },
   location: {
     type: String,
     required: [true],
