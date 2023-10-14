@@ -43,6 +43,11 @@ const schema = mongoose.Schema({
     enum: ["food", "drinks", "snacks"],
     required: [true],
   },
+  createdAt: {
+    type: Date,
+    default: Date.now,
+    required: true,
+  },
 });
 
 const Posts = mongoose.model("posts", schema);
