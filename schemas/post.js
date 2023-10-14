@@ -5,12 +5,13 @@ const newPostValidation = joi.object({
   avatarUrl: joi.string().required(),
   email: joi.string().min(6).required(),
   title: joi.string().required(),
-  location: joi.string().required(),
+  city: joi.string().required(),
   time: joi.string().required(),
   price: joi.number().required(),
   img: joi.string().required(),
   description: joi.string().required(),
   tag: joi.string().required(),
+  location: joi.string().required(),
 });
 
 module.exports = {
